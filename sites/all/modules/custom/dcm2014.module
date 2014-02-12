@@ -1,0 +1,78 @@
+<?php
+
+/**
+* Implements hook_block_info().
+*/
+
+function dcm2014_block_info() {
+  $blocks['dcm2014-front-contents'] = array(
+    'info' => t('front contents'),
+  );
+
+  $blocks['dcm2014-map'] = array(
+    'info' => t('schedule map'),
+  );
+
+  return $blocks;
+}
+
+
+/**
+* Implements hook_block_view().
+*/
+function dcm2014_block_view($delta = '') {
+$block = array();
+switch ($delta) {
+  case 'dcm2014-front-contents':
+    $block['subject'] = '';
+    $block['content'] = dcm2014_front_contents();
+    break;
+
+    case 'dcm2014-map':
+        $block['subject'] = '';
+        $block['content'] = dcm2014_map();
+        break;
+}
+
+return $block;
+}
+
+/**
+* Creates placeholder block for links above.
+*/
+function dcm2014_front_contents() {
+
+$html = "<div id='front-content'>";
+$html .= "<span class='drush'> <img src='/sites/all/themes/dcmanila2014/images/drush.png'> </span>";
+$html .= "<span class='love'> <img src='/sites/all/themes/dcmanila2014/images/love.png'> </span>";
+$html .= "<span class='you'> <img src='/sites/all/themes/dcmanila2014/images/you.png'> </span>";
+$html .= "</div>";
+
+return $html;
+}
+
+
+
+/**
+ * Creates placeholder map block for links above.
+ */
+function dcm2014_map() {
+
+$html = "<div id='mapContainer'></div>";
+
+drupal_add_js("jQuery(window).on('load', function() {
+    jQuery('#mapContainer').jHERE({
+        enable: ['zoombar'],
+        center: [14.586493, 121.01771],
+        zoom: 12
+    }).jHERE('marker', [14.586493, 121.01771], {
+    	icon: 'sites/all/themes/dcmanila2014/images/markerko.png',
+        anchor: {x: 12, y: 32},
+        click: function(){alert('hello');}
+    });
+});", 'inline');
+$html .= "<div id='pop'></div>";
+
+return $html;
+
+}

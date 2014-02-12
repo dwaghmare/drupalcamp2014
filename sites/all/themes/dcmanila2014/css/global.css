@@ -1,0 +1,222 @@
+/* This file will hold styles for the mobile version of your website (mobile first). */
+/* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+
+body {
+  background-color: #0ba5e6;
+
+}
+
+h1.site-name,
+h2.site-name{
+  text-transform: uppercase;
+  margin-top: 80px;
+  font-family: 'Montserrat';
+}
+
+.site-name-slogan {
+    float: none;
+    text-align: center;
+}
+
+h1.site-name a:link,
+h1.site-name a:active,
+h1.site-name a:visited,
+h2.site-name a:link,
+h2.site-name a:active,
+h2.site-name a:visited{
+    color: #fff;
+}
+
+
+h2.site-name {
+  margin-bottom: 50px;
+}
+
+#front-content {
+  text-align:center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+}
+
+#front-content span.drush,
+#front-content span.you,
+#front-content span.love {
+  margin: 0 50px 0 50px;
+
+}
+
+#zone-menu-wrapper {
+  background-color: #22aae4;
+  height: 80px;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
+#zone-content-wrapper {
+  background-color: #f7f7f7;
+  padding: 50px 50px 0 50px;
+}
+
+.sf-menu.menu,
+.sf-menu.menu ul,
+.sf-menu.menu li {
+  margin: 0 2em;
+}
+
+ul#superfish-1 a:link,
+ul#superfish-1 a:visited {
+  color: #fff;
+  text-decoration: none;
+  height: 15px;
+  border-top: 3px solid transparent;
+  padding-top: 30px;
+  text-transform: uppercase;
+}
+
+ul#superfish-1 a:hover,
+ul#superfish-1 a:active,
+ul#superfish-1 a.active{
+    color: #1b88b6;
+    text-decoration: none;
+    height: 15px;
+    border-top: 3px solid;
+    padding-top: 30px;
+    text-transform: uppercase;
+}
+
+.containerko {
+  width:100%;
+}
+
+.contentsko {
+  width:50%;
+  float:left;
+  clear:both
+}
+
+
+.imgko {
+  width:50%;
+  float:right;
+  margin-top: 151px;
+}
+
+.contentsko .textko {
+  color: #000;
+  font-weight: 700;
+}
+
+.contentsko .plusko {
+  color: #0ba5e6;
+  font-weight: 700;
+}
+
+.contentsko .p1 {
+  font-size: 18px;
+  color: #666666;
+}
+
+.contentsko .p2 {
+  font-size: 14px;
+  color: #666666;
+}
+
+h2.block-title,
+h1.title,
+h1#page-title{
+  margin: 50px 0;
+  font-family: 'Montserrat';
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+
+
+#mapContainer {
+    font-family: sans-serif;
+    background: #fff;
+    color: #444;
+    height: 900px;
+    padding: 0;
+    margin: 0 -117px 0 -117px;
+}
+
+body.page-schedule #zone-content-wrapper {
+    margin: 0px 50px 0 50px;
+    padding: 0 50px 0px 50px;
+}
+
+body.page-schedule h1#page-title,
+body.page-sponsors h2.block-title,
+body.page-schedule .breadcrumb,
+body.page-sponsors .breadcrumb {
+    display: none;
+}
+
+body.page-sponsors h1#page-title
+{
+  text-align: center;
+}
+
+
+
+#pop {
+  background: url('../images/bannersked.png') no-repeat;
+  background-color: transparent;
+  height: 186px;
+  width: 654px;
+  position: absolute;
+  z-index: 1;
+  top: 130px;
+}
+
+.block-block-3 .content {
+  font-size:18px;
+  color: #666666;
+}
+
+body.page-sponsors .view-content div.item-list:nth-child(1)  {
+  text-align: center;
+  margin: 50px 0 200px 0;
+  background: #7f98b0;
+  border-radius: 10px 10px 0 0;
+  height: 25px;
+  padding: 23px;
+}
+
+body.page-sponsors .view-content div.item-list:nth-child(2) {
+    text-align: center;
+    margin: 50px 0 300px 0;
+    background: #ffcc00;
+    border-radius: 10px 10px 0 0;
+    height: 25px;
+    padding: 23px;
+}
+
+body.page-sponsors .view-content div.item-list:nth-child(3)  {
+    text-align: center;
+    margin: 50px 0 200px 0;
+    background: #cfd8e6;
+    border-radius: 10px 10px 0 0;
+    height: 25px;
+    padding: 23px;
+}
+
+body.page-sponsors .view-sponsors a:link,
+body.page-sponsors .view-sponsors a:active
+body.page-sponsors .view-sponsors a:visited{
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+}
+
+body.page-sponsors .view-sponsors .field-content {
+  margin-top: 30px;
+}
+
+body.page-sponsors #zone-content-wrapper {
+  background-color: #fff;
+
+}
