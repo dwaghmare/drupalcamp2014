@@ -99,7 +99,7 @@ ul#superfish-1 a.active{
 .imgko {
   width:50%;
   float:right;
-  margin-top: 151px;
+  margin-top: -60px;
 }
 
 .contentsko .textko {
@@ -219,4 +219,3 @@ body.page-sponsors .view-sponsors .field-content {
 body.page-sponsors #zone-content-wrapper {
   background-color: #fff;
 }
- 
